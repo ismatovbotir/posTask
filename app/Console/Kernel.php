@@ -12,8 +12,8 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule): void
     {
-        $schedule->command('app:read-receipt')->everyTwoMinutes();
-        $schedule->command('app:submit-receipts')->everyTwoMinutes();
+        $schedule->command('app:read-receipt')->everyFiveMinutes();
+        $schedule->command('app:submit-receipts')->everyFiveMinutes();
         //$schedule->command('app:retry-failed')->everyTwoMinutes();
         $schedule->command('app:delete-receipts')->daily();
     }
