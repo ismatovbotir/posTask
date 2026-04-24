@@ -1,5 +1,5 @@
 @echo off
-cd /d d:\laragon\www\pos
+cd /d d:\laragon\www\posService
 
 :loop
 echo [%date% %time%] Starting schedule:work...
